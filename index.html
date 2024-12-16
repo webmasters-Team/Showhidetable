@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmasters small projects</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.0.0/nouislider.min.js"></script>
+<body>
+    <div class="control-panel">
+        <div class="slider-container">
+            <div id="slider-range"></div>
+            <div class="legend">
+                Hide rows with grades less than <span id="value" class="value">0</span>
+            </div>
+        </div>
+        <div>
+            Class to display: 
+            <select id="class-chooser">
+                <option value="All" selected>All</option>
+                <option value="A">Class A</option>
+                <option value="B">Class B</option>
+            </select>
+        </div>
+    </div>
+    
+    <table id="grades">
+        <tr>
+            <th colspan="2">Pupil</th>
+            <th>Class</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Leonard</td>
+            <td>Carter</td>
+            <td>B</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Tunde</td>
+            <td>Makeba</td>
+            <td>A</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Nancy</td>
+            <td>Miller</td>
+            <td>A</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Singer</td>
+            <td>A</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Jason</td>
+            <td>Singer</td>
+            <td>B</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Amanda</td>
+            <td>Welch</td>
+            <td>B</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Charles</td>
+            <td>Wilson</td>
+            <td>A</td>
+            <td>8</td>
+        </tr>
+    </table>
+<script src="script.js"></script>    
+</body>
+</html>

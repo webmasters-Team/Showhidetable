@@ -1,0 +1,71 @@
+table, th, td { 
+	border: 1px solid grey;
+}
+table {
+	border-collapse: collapse;
+	margin: 1em auto;
+	width: 17.5em;
+}
+th, td {
+	padding: 0.5em;
+}
+td:nth-child(3) {
+	text-align: center;
+}
+td:nth-child(4) {
+	text-align: right;
+}
+th {
+	background: hsl(0, 0%, 55%);
+	color: white;
+}
+/* highlight even numbered rows (nth-child doesn't work due to table updating dynamically) */
+.even { 
+	background: hsl(220, 40%, 96%);
+}
+
+
+/* -------------------- */
+.control-panel {
+	background: hsl(0, 0%, 92%);
+	padding: 1em 1.2em;
+	width: 17.5em;
+	border: 1px solid hsl(0, 0%, 82%);
+	border-radius: 0.5em;
+	text-align: center;
+	margin: 1em auto;
+	box-sizing: border-box;
+}
+.noUi-target {
+	border: 1px solid hsl(0, 0%, 60%);
+}
+.noUi-handle {
+	position: absolute;
+	box-sizing: border-box;
+	top: -11px;
+	right: -10px;
+	width: 22px;
+	height: 22px;
+	background: hsl(220,80%,72%);
+	border-radius: 37.5%;
+	border: 2px solid hsl(220,40%,40%);
+	box-shadow: 0.125em 0.125em 0.2em hsl(0,0%,40%);
+}
+.noUi-handle:focus { 
+/* 	outline: none; */
+}
+.noUi-handle:hover { 
+	cursor: pointer;
+}
+.slider-container {
+	width: 15em;
+	margin: 1em 0;
+}
+.legend {
+	margin-top: 1em;
+	line-height: 1em;
+}
+.value { 
+	font-size: 1.25em;
+	font-weight: bold;
+}
